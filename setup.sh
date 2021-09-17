@@ -17,7 +17,7 @@ su -c "/home/ec2-user/.local/bin/pip3 install kafka-python --user" -s /bin/sh ec
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 ./aws/install -b /usr/local/bin/aws2
-su -c "ln -s /usr/local/bin/aws2/aws ~/.local/bin/aws2" -s /bin/sh ec2-user
+su -c "ln -s /usr/local/bin/aws2/aws ~/.local/bin/aws" -s /bin/sh ec2-user
 
 # Create dirs, get Apache Kafka 2.7.0 and unpack it
 su -c "mkdir -p kafka270 confluent" -s /bin/sh ec2-user
